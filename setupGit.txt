@@ -1,0 +1,19 @@
+创建github的仓库的方法：
+1：当地目录下创建仓库：git init，git status，git add等等后，然后使用ssh-keygen -t rsa -C "your_email@youremail.com"命令生成ssh key，然后到github里进行一些设置，完成远端仓库的建立。
+2：远端建立一个仓库，然后git clone git@github.com:GUOYX1234/something-xiao.git，这样当地就有一个和远端一样内容的仓库了 （repositories）
+（这个方法也不错）
+ 
+
+
+建立密钥和仓库没有什么关系。
+
+林韬 2017/3/8 21:17:03
+你保存好密钥，以后就可以直接用
+
+林韬 2017/3/8 21:17:42
+你可以建立一个远程的空仓库
+21:17:58
+林韬 2017/3/8 21:17:58
+然后在本地加上这个remote的仓库
+
+3：先在当地创建好 repository ，然后远端创建一个空的 repository，然后使用 git remote add origin  git@github.com:GUOYX1234/something-xiao.git，git push -u origin master就可以把当地的仓库的内容传输到远端repository（我一直用这个方法的）
